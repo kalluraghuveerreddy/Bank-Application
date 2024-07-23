@@ -1,0 +1,27 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: bank
+  datasource:
+    url: jdbc:mysql://localhost:3307/bank_db
+    username: root
+    password: root
+    driverClassName: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        included: "*"
+  endpoint:
+    health:
+      included: true
+      probes:
+        included: true
