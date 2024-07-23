@@ -1,0 +1,12 @@
+build:
+  version: 1.0.0
+
+bank:
+  contactInfo:
+    - "Ram Reddy"
+    - "Support Engineer"
+    - "rreddy@bank.com"
+  onCallSupport:
+    - (+91) 937452937
+    - (+91) 253343556
+
